@@ -1,0 +1,62 @@
+.ph-only{display: none;}
+.pc-only{display: flex;}
+.title-nav{z-index:20;}
+.p-title{padding-top:56px !important;}
+.top-0{top:0;}
+.navbar-nav .nav-link{width: 110px;}
+.navbar-nav .logo{width:160px;}
+.scroll .logo{width:100px;}
+.logo-img{top:-22px;left:0;}
+
+.carousel{height:0;padding-bottom: 47vw;}
+.pc-only .game-card{height:0;padding-bottom:140%;}
+.ph-only .game-card{width: 80%;height: 90%;position: absolute;top: 5%;left: 10%;}
+.game-card h3{top:0;left:0;background:rgba(0,0,0,.5);color:rgba(255, 255, 255, .5);transform:scale(0);transition:all .8s ease;}
+.game-card:hover h3{transform: scale(1);}
+.game-card::before{content:'';position:absolute;width:40%;padding-bottom:40%;background:#000;z-index:1;}
+.card-1::before{top:-5%;left:-5%;}
+.card-2::before{bottom:-5%;right:-5%;}
+.card-3::before{top:-5%;right:-5%;}
+
+/* game */
+.title-img{height:calc(100vw/7);}
+.title-word{top:50%;left:50%;transform:translate(-50%,-50%);}
+.navs-main{margin-top:-48px;}
+.navs-main .nav-link {border:0;}
+.navs-main .nav-link{background:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(128, 100, 100, .2) 100%);color:rgba(255, 255, 255, .5);}
+.navs-main .nav-link.active{background:rgba(0,0,0,1);color:rgba(255, 255, 255, 1);}
+.navs-main .tab-pane{height:calc(100vh - (100vw/7) - 56px);}
+.game-introduce{top:0;left:0;width:100%;height:100%;background:rgba(255, 255, 255, .5);border-radius:5px 5px 0 0;padding:0 10%;transform:translateY(-100%);transition:all .8s ease;}
+.game-box:hover .game-introduce{transform:translateY(0%);}
+
+.teach-box{width: 10%;transition:all .8s ease;}
+.teach-box.show{width: 80%;transition:all .8s ease;}
+.teach-box:nth-child(1){background: url(../images/5274eea8695a87795c9e4c8436fe71a4.jpg)no-repeat center/cover;}
+.teach-box:nth-child(2){background: url(../images/0_XFnK4ISaQkHAPDot_.jpg)no-repeat center/cover;}
+.teach-box:nth-child(3){background: url(../images/360_F_291194002_5N4jblcvlgBhle53ajsuEG6xRoLov3dq.jpg)no-repeat center/cover;}
+.teach-msg-box{width: 90%;height: 80%;}
+.teach-box .tab-content{height: inherit;background-color: rgba(255, 255, 255, .5);}
+.nav-tabs .nav-link{background-color: rgba(0, 0, 0, .3);color:#fff;}
+
+.title-img .about-btn.active{background-color: transparent;}
+.title-img .about-btn.active h2{border-bottom: 4px solid #fff;}
+#pills-tab .about-btn h2::before{content: '';position: absolute;top: 0;width: 150%;height: 100%;background: rgba(255, 255, 255, .5);}
+#about-us-tab h2::before{right: 0;transform: skewX(-30deg) translateX(-150%);transition: all .8s ease;}
+#contact-us-tab h2::before{left: 0;transform: skewX(-30deg) translateX(150%);transition: all .8s ease;}
+#pills-tab .about-btn:hover h2::before{transform: skewX(-30deg) translateX(0);}
+.introduction{height:calc(100vh - (100vw/7) - 56px);}
+.introduction-img{width: 100%;padding-bottom: 100%;background: rgba(255, 255, 255, .5);}
+.introduction-img>h3{top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.introduction .msg-box{background-color: rgba(255, 255, 255, .5);}
+
+@media screen and (max-width:767px) {
+    .ph-only{display: flex;}
+    .pc-only{display: none;}
+    h3{font-size: 1.25rem;}
+    .navbar-nav .nav-link{width: auto;}
+    .logo{top: 0;left: calc(50% - 40px);width: 80px;}
+    .game-kind{height:calc(100vh - 47vw - 56px);padding-bottom: 0;}
+    .navs-main{margin-top:0px;}
+    .teach-box{width: 100%;height: 10%!important;}
+    .teach-box.show{width: 100%;height: 80%!important;}
+}
