@@ -1,0 +1,122 @@
+body{background: rgba(50,4,4,1);}
+*{position: relative;}
+.ph-only{display: none;}
+.pc-only{display: flex;}
+.title-nav{
+    background: rgb(222,216,4);
+    background: -moz-linear-gradient(0deg,rgba(255,215,0,1) 0%, rgba(136,4,4,1) 20%, rgba(110,4,4,1) 50%, rgba(136,4,4,1) 70%, rgba(233,4,4,1) 100%);
+    background: -webkit-linear-gradient(0deg,rgba(255,215,0,1) 0%, rgba(136,4,4,1) 20%, rgba(110,4,4,1) 50%, rgba(136,4,4,1) 70%, rgba(233,4,4,1) 100%);
+    background: linear-gradient(0deg,rgba(255,215,0,1) 0%, rgba(136,4,4,1) 20%, rgba(110,4,4,1) 50%, rgba(136,4,4,1) 70%, rgba(233,4,4,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ded804",endColorstr="#e90404",GradientType=1);
+    z-index:20;
+}
+.p-title{padding-top:56px !important;}
+.top-0{top:0;}
+.navbar-nav .nav-link{width: 110px;}
+.navbar-nav .logo{width:160px;}
+.scroll .logo{width:100px;}
+.logo-img{top:-22px;left:0;}
+h1,h2{white-space:nowrap;}
+.bg-black-50{background-color: rgba(0,0,0,.5);}
+.bg-white-50{background-color: rgba(255,255,255,.5);}
+.color-y{color:#FFD700;text-shadow: 0px 0px 10px #fff;}
+.color-r{color:#880404;text-shadow: 0px 0px 10px #FF0;}
+.line::before,.line::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FFD700;
+    box-shadow: 0px 0px 10px #fff;
+}
+.line::before{margin-right: 1rem;}
+.line::after{margin-left: 1rem;}
+footer{
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(68,68,68,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(68,68,68,1) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(68,68,68,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#444444",GradientType=1);
+}
+footer img{
+    -webkit-filter:drop-shadow(0px 0px 6px #FFD700);
+}
+
+
+/* new_index */
+.question .card{background: rgba(0,0,0,.75);border-color: #FFD700;}
+.question .card-header{background: rgba(136,4,4,.2);border-color: rgba(255,215,0,.5);}
+
+
+/* new_game */
+.game ul{height: 160px;background: url(../images/casino-software.jpg) no-repeat bottom/cover;}
+.game ul::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
+    background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+.game-btn{
+    background: rgb(136,4,4);
+    background: -moz-linear-gradient(0deg,rgba(136,4,4,.5) 0%, rgba(110,4,4,.5) 50%, rgba(136,4,4,.5) 70%, rgba(233,4,4,.5) 100%);
+    background: -webkit-linear-gradient(0deg,rgba(136,4,4,.5) 0%, rgba(110,4,4,.5) 50%, rgba(136,4,4,.5) 70%, rgba(233,4,4,.5) 100%);
+    background: linear-gradient(0deg,rgba(136,4,4,.5) 0%, rgba(110,4,4,.5) 50%, rgba(136,4,4,.5) 70%, rgba(233,4,4,.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ded804",endColorstr="#e90404",GradientType=1);
+    border:2px solid #FFD700;
+    color: rgba(255,255,255,1);
+}
+.game-btn:hover{color: rgba(255,255,255,1);box-shadow: 0 0 10px #FFD700;}
+.game-btn.active{
+    background: rgb(136,4,4);
+    background: -moz-linear-gradient(0deg,rgba(136,4,4,1) 0%, rgba(110,4,4,1) 50%, rgba(136,4,4,1) 70%, rgba(233,4,4,1) 100%);
+    background: -webkit-linear-gradient(0deg,rgba(136,4,4,1) 0%, rgba(110,4,4,1) 50%, rgba(136,4,4,1) 70%, rgba(233,4,4,1) 100%);
+    background: linear-gradient(0deg,rgba(136,4,4,1) 0%, rgba(110,4,4,1) 50%, rgba(136,4,4,1) 70%, rgba(233,4,4,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ded804",endColorstr="#e90404",GradientType=1);
+}
+.game .tab-pane::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+.game h2{
+    background: rgb(228,164,9);
+    background: -moz-linear-gradient(0deg, rgba(228,164,9,1) 0%, rgba(252,255,160,1) 17%, rgba(255,255,0,1) 24%, rgba(228,164,9,1) 50%, rgba(255,255,186,1) 61%, rgba(255,180,0,1) 84%, rgba(255,255,0,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(228,164,9,1) 0%, rgba(252,255,160,1) 17%, rgba(255,255,0,1) 24%, rgba(228,164,9,1) 50%, rgba(255,255,186,1) 61%, rgba(255,180,0,1) 84%, rgba(255,255,0,1) 100%);
+    background: linear-gradient(0deg, rgba(228,164,9,1) 0%, rgba(252,255,160,1) 17%, rgba(255,255,0,1) 24%, rgba(228,164,9,1) 50%, rgba(255,255,186,1) 61%, rgba(255,180,0,1) 84%, rgba(255,255,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4a409",endColorstr="#ffff00",GradientType=1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.game .card{border:2px solid #FFD700;}
+
+
+
+
+
+@media screen and (max-width:767px) {
+    .ph-only{display: flex;}
+    .pc-only{display: none;}
+    h3{font-size: 1.25rem;}
+    .navbar-nav .nav-link{width: auto;}
+    .logo{top: 0;left: calc(50% - 40px);width: 80px;}
+    .game-kind{height:calc(100vh - 47vw - 56px);padding-bottom: 0;}
+    .navs-main{margin-top:0px;}
+    .teach-box{width: 100%;height: 10%!important;}
+    .teach-box.show{width: 100%;height: 80%!important;}
+}
