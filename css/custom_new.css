@@ -44,6 +44,7 @@ footer img{
 
 
 /* new_index */
+.home-img{height: 400px;}
 .question .card{background: rgba(0,0,0,.75);border-color: #FFD700;}
 .question .card-header{background: rgba(136,4,4,.2);border-color: rgba(255,215,0,.5);}
 
