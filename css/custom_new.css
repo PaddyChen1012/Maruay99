@@ -31,7 +31,7 @@ h1,h2{white-space:nowrap;}
 }
 .line::before{margin-right: 1rem;}
 .line::after{margin-left: 1rem;}
-.fixed-bar{bottom: 0;right: 0;width: 150px;z-index: 1;}
+.fixed-bar{bottom: 0;right: 0;width: 150px;z-index: 3;}
 footer{
     background: rgb(0,0,0);
     background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(68,68,68,1) 100%);
@@ -111,6 +111,45 @@ footer img{
     border:2px solid #FFD700;
 }
 
+/* new_promotions */
+.promotions-img{
+    height: 270px;
+}
+.promotions-img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    z-index: 1;
+}
+.promotions section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 270px;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    z-index: 1;
+}
+.promotions-card{z-index: 2;}
+.promotions-img h2{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
 
 
 
