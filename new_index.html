@@ -23,14 +23,26 @@
                 <li class="nav-item text-center">
                     <a class="nav-link" href="new_game.html">Games</a>
                 </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="new_promotions.html">Promotions</a>
+                </li>
                 <li class="nav-item text-center pc-only">
                     <a class="logo nav-link position-relative" href="new_index.html"><img class="logo-img position-absolute w-100" src="images/logo.png" alt=""></a>
                 </li>
                 <li class="nav-item text-center">
-                    <a class="nav-link" href="new_promotions.html">Promotions</a>
+                    <a class="nav-link" href="new_diamond.html">Diamond</a>
                 </li>
                 <li class="nav-item text-center">
-                    <a class="nav-link disabled" href="introduction.html">Introduction</a>
+                    <a class="nav-link" href="new_contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown text-center">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Langue
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Thai</a>
+                        <a class="dropdown-item" href="#">English</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -86,17 +98,17 @@
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam autem, unde beatae nostrum alias cumque, natus veritatis exercitationem laborum maiores quas debitis numquam delectus. Sapiente facere similique itaque explicabo voluptatibus est laboriosam a fugit nam eligendi nihil dolor inventore perspiciatis doloremque, ducimus dolore, omnis, veritatis ratione. Tenetur commodi laudantium nobis.</span>
                     </div>
                     <div class="row w-100 m-0 mt-5">
-                        <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+                        <a class="col-12 col-md-4 d-flex align-items-center justify-content-center" href="">
                             <img class="w-50" src="images/1000x1000-casino-(283K).png" alt="">
-                        </div>
+                        </a>
                     
-                        <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+                        <a class="col-12 col-md-4 d-flex align-items-center justify-content-center" href="">
                             <img class="w-50" src="images/1000x1000-casino-(283K).png" alt="">
-                        </div>
+                        </a>
                         
-                        <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+                        <a class="col-12 col-md-4 d-flex align-items-center justify-content-center" href="">
                             <img class="w-50" src="images/1000x1000-casino-(283K).png" alt="">
-                        </div>
+                        </a>
                         
                     </div>
                 </div>
@@ -201,5 +213,12 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android終端
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios終端
+        alert('是否是Android：'+isAndroid);
+        alert('是否是iOS：'+isiOS);
+    </script>
 </body>
 </html>
