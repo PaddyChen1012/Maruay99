@@ -217,11 +217,7 @@
         let u = navigator.userAgent;
         let isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android終端
         let isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios終端
-        if(isAndroid === true){
-            alert(1)
-        }else if(isAndroid === true){
-            alert(2)
-        }
+        console.log(isAndroid,isiOS)
     </script>
 </body>
 </html>
