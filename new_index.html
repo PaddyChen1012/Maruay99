@@ -51,8 +51,8 @@
 
     <!-- fixed bar -->
     <div class="position-fixed d-flex flex-column align-items-center justify-content-between p-1 bg-white-50 fixed-bar">
-        <a href=""><img class="img-fluid p-2" src="https://www.maruay99ph.com/wp-content/uploads/2020/03/android.png" alt=""></a>
-        <a href=""><img class="img-fluid p-2" src="https://www.maruay99ph.com/wp-content/uploads/2020/03/apk_ios.png" alt=""></a>
+        <a id="download_android" href=""><img class="img-fluid p-2" src="https://www.maruay99ph.com/wp-content/uploads/2020/03/android.png" alt=""></a>
+        <a id="download_ios" href=""><img class="img-fluid p-2" src="https://www.maruay99ph.com/wp-content/uploads/2020/03/apk_ios.png" alt=""></a>
     </div>
 
 
@@ -217,13 +217,15 @@
         let u = navigator.userAgent;
         let isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android終端
         let isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios終端
+        let dAndroid = document.querySelector('#download_android')
+        let diOS = document.querySelector('#download_ios')
         function oscheck(){
-            if (isAndroid == true || isiOS == false){
-                console.log('123')
-            }else if (isAndroid == false || isiOS == true){
-                console.log('456')
+            if (isAndroid == true && isiOS == false){
+                diOS.style.display = 'none';
+            }else if (isAndroid == false && isiOS == true){
+                dAndroid.style.display = 'none';
             }else {
-                console.log('789')
+                return
             }
         }
         oscheck()
