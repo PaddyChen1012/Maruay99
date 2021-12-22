@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom_new.css">
+</head>
+<body>
+    <nav class="title-nav position-fixed navbar navbar-expand-lg navbar-dark bg-dark align-items-center justify-content-end w-100 top-0">
+        <a class="logo nav-link position-absolute p-0 ph-only" href="index.html"><img class="logo-img w-100" src="images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mx-auto">
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="index.html">send</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="game.html">Games</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="promotions.html">Promotions</a>
+                </li>
+                <li class="nav-item text-center pc-only">
+                    <a class="logo nav-link position-relative" href="index.html"><img class="logo-img position-absolute w-100" src="images/logo.png" alt=""></a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link active" href="diamond.html">Diamond</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown text-center">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Langue
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Thai</a>
+                        <a class="dropdown-item" href="#">English</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- fixed bar -->
+    <div class="position-fixed d-flex flex-column align-items-center justify-content-between p-1 bg-white-50 fixed-bar">
+        <a id="download_android" href="https://play.google.com/store/apps/details?id=com.starcube.Maruay99&shortlink=WebMR99Download&pid=Web-MR99-Download"><img class="img-fluid p-2" src="https://www.maruay99ph.com/wp-content/uploads/2020/03/android.png" alt=""></a>
+        <a id="download_ios" href="https://web.maruay99.com/common/receive/Counter/Maruay_Mobil_QRCodeLink.aspx?gid=MARUAY99"><img class="img-fluid p-2" src="https://www.maruay99ph.com/wp-content/uploads/2020/03/apk_ios.png" alt=""></a>
+    </div>
+
+
+    <main class="container-fluid p-0 p-title diamond">
+        <div class="w-100 overflow-hidden d-flex align-items-center justify-content-center diamond-img">
+            <h2 class="text-light">Diamond</h2>
+        </div>
+
+        <section class="container-fluid p-0">
+            <div class="container py-5">
+                <div class="row w-100 m-0 justify-content-center">
+                    <div class="col-12 col-md-8 p-0">
+                        <ul class="nav nav-pills my-3 flex-column flex-md-row justify-content-around" id="pills-tab" role="tablist">
+                            <li class="nav-item p-2">
+                                <a class="nav-link diamond-btn active" id="pills-send-tab" data-toggle="pill" href="#pills-send" role="tab" aria-controls="pills-send" aria-selected="true">Send Gift</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="nav-link diamond-btn" id="pills-receiver-tab" data-toggle="pill" href="#pills-receiver" role="tab" aria-controls="pills-receiver" aria-selected="false">Receiver Gift</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="nav-link diamond-btn" id="pills-dianond-tab" data-toggle="pill" href="#pills-dianond" role="tab" aria-controls="pills-dianond" aria-selected="false">Buy Diamond</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="nav-link diamond-btn" id="pills-introduce-tab" data-toggle="pill" href="#pills-introduce" role="tab" aria-controls="pills-introduce" aria-selected="false">Introduce</a>
+                            </li>
+                        </ul>    
+                    </div>
+                    <div class="col-12 border p-0 bg-black-50 overflow-hidden">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-send" role="tabpanel" aria-labelledby="pills-send-tab">
+                                <div class="d-flex flex-column align-items-center justify-content-center py-4 px-2">
+                                    <h3 class="position-relative w-100 text-center d-flex align-items-center justify-content-center line mb-4 color-y">Send Gift</h3>
+                                    <img class="img-fluid" src="images/send-1.jpg" alt="" srcset="">
+                                    <h4 class="text-light mb-4">Click the Bank icon</h4>
+                                    <img class="img-fluid" src="images/send-2.jpg" alt="" srcset="">
+                                    <h4 class="text-light mb-4">Click your friend list</h4>
+                                    <img class="img-fluid" src="images/send-3.jpg" alt="" srcset="">
+                                    <h4 class="text-light mb-4">Enter your friend’s name and click on Exchange</h4>
+                                    <img class="img-fluid" src="images/send-4.jpg" alt="" srcset="">
+                                    <h4 class="text-light mb-4">Select the amount of diamonds to sent and Click send.</h4>
+                                    <img class="img-fluid" src="images/send-5.jpg" alt="" srcset="">
+                                    <h4 class="text-light mb-4">Click Cofirm</h4>
+                                    <img class="img-fluid" src="images/send-6.jpg" alt="" srcset="">
+                                    <h4 class="text-light mb-4">Click on the Transfer Center.</h4>
+                                    <img class="img-fluid" src="images/send-7.jpg" alt="" srcset="">
+                                    <h4 class="text-light mb-4">Confirm Send</h4>
+                                    <img class="img-fluid" src="images/send-8.jpg" alt="" srcset="">
+                                    <h4 class="text-light mb-4">Click Cofirm</h4>
+                                    <img class="img-fluid" src="images/send-9.jpg" alt="" srcset="">
+                                    <h4 class="text-light">Click Cofirm</h4>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-receiver" role="tabpanel" aria-labelledby="pills-receiver-tab">
+                                <div class="d-flex flex-column align-items-center justify-content-center py-4 px-2">
+                                    <h3 class="position-relative w-100 text-center d-flex align-items-center justify-content-center line mb-4 color-y">Receiver Gift</h3>
+                                    <img class="img-fluid" src="images/receiver-1.jpg" alt="" srcset="">
+                                    <h4 class="text-light mb-4">Click OK</h4>
+                                    <img class="img-fluid" src="images/receiver-2.jpg" alt="" srcset="">
+                                    <h4 class="text-light mb-4">Wait for sender to confirm.</h4>
+                                    <img class="img-fluid" src="images/receiver-3.jpg" alt="" srcset="">
+                                    <h4 class="text-light mb-4">Click Receive</h4>
+                                    <img class="img-fluid" src="images/receiver-4.jpg" alt="" srcset="">
+                                    <h4 class="text-light mb-4">Click Cofirm</h4>
+                                    <img class="img-fluid" src="images/receiver-5.jpg" alt="" srcset="">
+                                    <h4 class="text-light mb-4">Successful send, return to the main page to check out diamond.</h4>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-dianond" role="tabpanel" aria-labelledby="pills-dianond-tab">
+                                <div class="d-flex flex-column align-items-center justify-content-center py-4 px-2">
+                                    <img class="position-absolute w-100 opacity-4" src="images/1000x1000-casino-(283K).png" alt="" srcset="">
+                                    <h3 class="position-relative w-100 text-center d-flex align-items-center justify-content-center line mb-4 color-y">Buy Diamond</h3>
+                                    <div class="row w-100 mx-auto">
+                                        <div class="game-card d-flex justify-content-center col-12 col-md-4 py-3">
+                                            <div class="card bg-black-50 text-light border border-warning overflow-hidden">
+                                                <img src="images/diamonds_01.png" class="card-img-top" alt="...">
+                                                <div class="card-body d-flex flex-column justify-content-between">
+                                                <h5 class="card-title text-center">105 UP</h5>
+                                                <a name="btn" data-no="0" data-kids="others" data-target="#productDescription" data-toggle="modal" href="#" class="btn btn-outline-warning w-100">PHP 162</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="game-card d-flex justify-content-center col-12 col-md-4 py-3">
+                                            <div class="card bg-black-50 text-light border border-warning overflow-hidden cloth popular">
+                                                <img src="images/diamonds_02.png" class="card-img-top" alt="...">
+                                                <div class="card-body d-flex flex-column justify-content-between">
+                                                <h5 class="card-title text-center">210 UP</h5>
+                                                <a name="btn" data-no="0" data-kids="others" data-target="#productDescription" data-toggle="modal" href="#" class="btn btn-outline-warning w-100">PHP 324</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="game-card d-flex justify-content-center col-12 col-md-4 py-3">
+                                            <div class="card bg-black-50 text-light border border-warning overflow-hidden">
+                                                <img src="images/diamonds_03.png" class="card-img-top" alt="...">
+                                                <div class="card-body d-flex flex-column justify-content-between">
+                                                <h5 class="card-title text-center">315 UP</h5>
+                                                <a name="btn" data-no="0" data-kids="others" data-target="#productDescription" data-toggle="modal" href="#" class="btn btn-outline-warning w-100">PHP 486</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="game-card d-flex justify-content-center col-12 col-md-4 py-3">
+                                            <div class="card bg-black-50 text-light border border-warning overflow-hidden">
+                                                <img src="images/diamonds_04.png" class="card-img-top" alt="...">
+                                                <div class="card-body d-flex flex-column justify-content-between">
+                                                <h5 class="card-title text-center">530 UP</h5>
+                                                <a name="btn" data-no="0" data-kids="others" data-target="#productDescription" data-toggle="modal" href="#" class="btn btn-outline-warning w-100">PHP 810</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="game-card d-flex justify-content-center col-12 col-md-4 py-3">
+                                            <div class="card bg-black-50 text-light border border-warning overflow-hidden">
+                                                <img src="images/diamonds_05.png" class="card-img-top" alt="...">
+                                                <div class="card-body d-flex flex-column justify-content-between">
+                                                <h5 class="card-title text-center">1060 UP</h5>
+                                                <a name="btn" data-no="0" data-kids="others" data-target="#productDescription" data-toggle="modal" href="#" class="btn btn-outline-warning w-100">PHP 1620</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="game-card d-flex justify-content-center col-12 col-md-4 py-3">
+                                            <div class="card bg-black-50 text-light border border-warning overflow-hidden cloth best">
+                                                <img src="images/diamonds_05.png" class="card-img-top" alt="...">
+                                                <div class="card-body d-flex flex-column justify-content-between">
+                                                <h5 class="card-title text-center">3180 UP</h5>
+                                                <a name="btn" data-no="0" data-kids="others" data-target="#productDescription" data-toggle="modal" href="#" class="btn btn-outline-warning w-100">PHP 4860</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-introduce" role="tabpanel" aria-labelledby="pills-introduce-tab">
+                                <div class="d-flex flex-column align-items-center justify-content-center py-4 px-2">
+                                    <h3 class="position-relative w-100 text-center d-flex align-items-center justify-content-center line mb-4 color-y">Introduce</h3>
+                                    <div class="row w-100 mx-auto">
+                                        <div class="col-12 col-md-8">
+                                            <img src="images/introduce.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="col-12 col-md-4 p-0">
+                                            <ol class="dataText text-light my-3">
+                                                <li class="h6">โปรไฟล์สามารถเปลี่ยนรูปประจำตัวและดูข้อมูลทั่วไป</li>
+                                                <li class="h6">เลเวลสูงขึ้นมีสิทธิประโยชน์มากขึ้น</li>
+                                                <li class="h6">ระดับ VIP สูงขึ้นมีสิทธิประโยชน์มากขึ้น</li>
+                                                <li class="h6">แสดงจำนวนเพชรที่มีอยู่</li>
+                                                <li class="h6">หน้าเติมเงิน</li>
+                                                <li class="h6">หน้าแพ็กเกจ</li>
+                                                <li class="h6">Ranking มังกรและเสือ</li>
+                                                <li class="h6">ห้องแชท</li>
+                                                <li class="h6">ส่งของขวัญ</li>
+                                                <li class="h6">อันดับ Ranking</li>
+                                                <li class="h6">คู่มือรวย</li>
+                                                <li class="h6">ฝ่ายบริการลูกค้า</li>
+                                                <li class="h6">ตั้งค่า</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
