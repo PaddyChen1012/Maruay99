@@ -11,39 +11,51 @@ request.onload = function() {
 }
 
 function loadData(obj) {
-    let GameList = obj['Game'];
+    let GameList = obj;
 
     let GameName = document.querySelector('#GameName');
-    let pageImg = document.querySelectorAll('#pageImg img');
-    let GameMsg = document.querySelectorAll('[name=GameMsg]')
+    let page = document.querySelector('#pageImg');
+    // let pageImg = document.querySelectorAll('#pageImg img');
+    // let GameMsg = document.querySelectorAll('[name=GameMsg]')
     // let GameMain2 = document.querySelector('#GameMain2')
     // let GameMain3 = document.querySelector('#GameMain3')
     // let GameMain4 = document.querySelector('#GameMain4')
-    console.log(pageImg)
+    
+
 
     function getNum(btnNo) {
-        Num = btnNo.target.dataset.no;
-        BtnKids = btnNo.target.dataset.kids
+        let Num = btnNo.target.dataset.no;
+        let BtnKids = btnNo.target.dataset.kids
         if (BtnKids == 'slots'){
-            GL = GameList[0].slots
+            GL = GameList.slots
             getData(GL)
         }else if (BtnKids == 'fishing'){
-            GL = GameList[0].fishing
+            GL = GameList.fishing
             getData(GL)
         }
         else if (BtnKids == 'others'){
-            GL = GameList[0].others
+            GL = GameList.others
             getData(GL)
         }
         function getData(){
+            let imgLen = GL[Num].img.length
+            let msgLen = GL[Num].main.length
+            page.innerHTML = '';
+            console.log(imgLen,msgLen);
             GameName.textContent = GL[Num].name;
-            for(let l = 0; l < GameMsg.length; l++){
-                pageImg[l].setAttribute('src', GL[Num].img[l]);
-                for(let k = 0; k < GameMsg.length; k++){
-                    console.log('1')
-                    GameMsg[k].textContent = GL[Num].main[k]
-                }
+            for(let l = 0; l < msgLen; l++){
+                let gameImg = document.createElement('img');
+                gameImg.setAttribute('class', 'card-img-top')
+                gameImg.setAttribute('src', GL[Num].img[l]);
+                page.appendChild(gameImg)
+                // for(let k = 0; k < msgLen; k++){
+                let gameMsg = document.createElement('p');
+                gameMsg.setAttribute('class', 'my-2')
+                gameMsg.textContent = GL[Num].main[l]
+                page.appendChild(gameMsg)
+                // }
             }
+            
             // GameMain1.textContent = GL[Num].main1;
             // GameMain2.textContent = GL[Num].main2;
             // GameMain3.textContent = GL[Num].main3;
