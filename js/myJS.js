@@ -44,22 +44,17 @@ function loadData(obj) {
             console.log(imgLen,msgLen);
             GameName.textContent = GL[Num].name;
             for(let l = 0; l < msgLen; l++){
-                let gameImg = document.createElement('img');
-                gameImg.setAttribute('class', 'card-img-top')
-                gameImg.setAttribute('src', GL[Num].img[l]);
-                page.appendChild(gameImg)
-                // for(let k = 0; k < msgLen; k++){
+                if (l<imgLen){
+                    let gameImg = document.createElement('img');
+                    gameImg.setAttribute('class', 'card-img-top')
+                    gameImg.setAttribute('src', GL[Num].img[l]);
+                    page.appendChild(gameImg)
+                }
                 let gameMsg = document.createElement('p');
                 gameMsg.setAttribute('class', 'my-2')
                 gameMsg.textContent = GL[Num].main[l]
                 page.appendChild(gameMsg)
-                // }
             }
-            
-            // GameMain1.textContent = GL[Num].main1;
-            // GameMain2.textContent = GL[Num].main2;
-            // GameMain3.textContent = GL[Num].main3;
-            // GameMain4.textContent = GL[Num].main4;
         }
     }
 
