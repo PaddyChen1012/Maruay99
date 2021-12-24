@@ -40,7 +40,7 @@ function cardData(obj) {
 
             cardImg = document.createElement('img');
             cardImg.setAttribute('class', 'card-img-top');
-            cardImg.setAttribute('src', GL[z].gameimg);
+            cardImg.setAttribute('src', '../images/' + GL[z].gameimg);
             cardBg.appendChild(cardImg);
 
             cardFt = document.createElement('div');
@@ -94,16 +94,19 @@ function loadData(obj) {
             page.innerHTML = '';
             GameName.textContent = GL[Num].name;
             for(let l = 0; l < msgLen; l++){
-                if (GL[Num].main[l].includes('images')){
+                if (GL[Num].main[l].includes('png') || GL[Num].main[l].includes('jpg')){
                     let gameImg = document.createElement('img');
                     gameImg.setAttribute('class', 'card-img-top mb-2');
-                    gameImg.setAttribute('src', GL[Num].main[l]);
+                    gameImg.setAttribute('src', '../images/' + GL[Num].main[l]);
                     page.appendChild(gameImg)
                 }else{
                     let gameMsg = document.createElement('p');
                     gameMsg.setAttribute('class', 'my-2');
-                    gameMsg.textContent = GL[Num].main[l];
+                    let gameWd = document.createElement('span');
+                    gameWd.setAttribute('class', 'ml-4');
+                    gameWd.textContent = GL[Num].main[l];
                     page.appendChild(gameMsg);
+                    gameMsg.appendChild(gameWd);
                 }
             }
         }
