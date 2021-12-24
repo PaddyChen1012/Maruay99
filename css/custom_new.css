@@ -138,7 +138,7 @@ footer img{
 }
 .game .card{border:2px solid #FFD700;}
 .game .modal-content{background:rgba(136,4,4,1);border:2px solid #FFD700;}
-.game .modal-content{height:calc(100vh - 3.5rem);}
+.game .modal-content{max-height:calc(100vh - 3.5rem);}
 
 
 /* new_promotions */

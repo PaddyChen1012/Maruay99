@@ -1,15 +1,3 @@
-// const GameMsg = document.querySelector('#productDescription');
-let requestURL = '../json/en_game_list.json';
-let request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
-
-request.onload = function() {
-    const GameList = request.response;
-    loadData(GameList);
-}
-
 function loadData(obj) {
     let GameList = obj;
 
@@ -20,7 +8,7 @@ function loadData(obj) {
     // let GameMain2 = document.querySelector('#GameMain2')
     // let GameMain3 = document.querySelector('#GameMain3')
     // let GameMain4 = document.querySelector('#GameMain4')
-    
+    console.log(document.querySelector('#slots_list'))
 
 
     function getNum(btnNo) {
@@ -41,7 +29,6 @@ function loadData(obj) {
             let imgLen = GL[Num].img.length
             let msgLen = GL[Num].main.length
             page.innerHTML = '';
-            console.log(imgLen,msgLen);
             GameName.textContent = GL[Num].name;
             for(let l = 0; l < msgLen; l++){
                 if (l<imgLen){
