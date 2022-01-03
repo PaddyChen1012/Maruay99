@@ -107,7 +107,7 @@ footer img{
 
 
 /* new_game */
-.game ul{height:160px;background:url(../images/casino-software.jpg) no-repeat bottom/cover;}
+.game ul{height:270px;background:url(../images/casino-software.jpg) no-repeat bottom/cover;}
 .diamond-btn,
 .game-btn{
     background:rgb(136,4,4);
@@ -139,7 +139,11 @@ footer img{
 .game .card{border:2px solid #FFD700;}
 .game .modal-content{background:rgba(136,4,4,1);border:2px solid #FFD700;}
 .game .modal-content{max-height:calc(100vh - 3.5rem);}
-
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 700px;
+    }
+}
 
 /* new_promotions */
 

@@ -1,5 +1,5 @@
 // const GameMsg = document.querySelector('#productDescription');
-let requestURL = '../json/en_game_list.json';
+let requestURL = 'json/en_game_list.json';
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -56,12 +56,14 @@ function cardData(obj) {
             cardBtn.setAttribute('class', 'btn btn-outline-warning w-100');
             cardBtn.setAttribute('href', '#');
             cardBtn.setAttribute('name', 'btn');
-            cardBtn.setAttribute('data-no', '0');
+            cardBtn.setAttribute('data-no', z);
             cardBtn.setAttribute('data-kids', GK);
             cardBtn.setAttribute('data-target', '#productDescription');
             cardBtn.setAttribute('data-toggle', 'modal');
             cardBtn.textContent = 'คำอธิบาย';
             cardFt.appendChild(cardBtn);
+
+            cardBtn.addEventListener('click', loadData, false);
         }
     }
     
@@ -70,14 +72,13 @@ function cardData(obj) {
 // The game card introduce
 function loadData(obj) {
     let GameList = obj;
-
     let GameName = document.querySelector('#GameName');
     let page = document.querySelector('#pageImg');
 
 
     function getNum(btnNo) {
         let Num = btnNo.target.dataset.no;
-        let BtnKids = btnNo.target.dataset.kids
+        let BtnKids = btnNo.target.dataset.kids;
         if (BtnKids == 'slots'){
             GL = GameList.slots
             getData(GL)
@@ -116,8 +117,3 @@ function loadData(obj) {
     el.addEventListener('click', getNum, false);
     
 }
-let btnNo = document.querySelectorAll('[name="btn"]');
-for(let j = 0; j < btnNo.length; j++) {
-    btnNo[j].addEventListener('click', loadData,false);
-}
-
