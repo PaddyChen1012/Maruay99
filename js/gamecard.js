@@ -75,10 +75,12 @@ function loadData(obj) {
     let GameName = document.querySelector('#GameName');
     let page = document.querySelector('#pageImg');
 
-
-    function getNum(btnNo) {
-        let Num = btnNo.target.dataset.no;
-        let BtnKids = btnNo.target.dataset.kids;
+    function getNum(e) {
+        console.log(e)
+        let modalBody = document.querySelector('.modal-body');
+        let Num = e.target.dataset.no;
+        let BtnKids = e.target.dataset.kids;
+        modalBody.scrollTop = 0;
         if (BtnKids == 'slots'){
             GL = GameList.slots
             getData(GL)
