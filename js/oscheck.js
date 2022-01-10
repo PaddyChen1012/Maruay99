@@ -5,9 +5,11 @@ let dAndroid = document.querySelectorAll('[name=download_android]')
 let diOS = document.querySelectorAll('[name=download_ios]')
 function oscheck(){
     if (isAndroid == true && isiOS == false){
-        diOS.style.display = 'none';
+        diOS[0].style.display = 'none';
+        diOS[1].style.display = 'none';
     }else if (isAndroid == false && isiOS == true){
-        dAndroid.style.display = 'none';
+        dAndroid[0].style.display = 'none';
+        dAndroid[1].style.display = 'none';
     }else {
         return
     }
