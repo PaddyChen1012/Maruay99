@@ -11,8 +11,10 @@ body{background:rgba(50,4,4,1);}
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ded804",endColorstr="#e90404",GradientType=1);
     z-index:20;
 }
+.lag-box{height:100%;z-index:2;}
 .p-title{padding-top:56px !important;}
 .top-0{top:0;}
+.left-0{left:0;}
 .navbar-nav .nav-link{width:80px;}
 .navbar-nav .logo{width:160px;}
 .dropdown-menu {
@@ -208,4 +210,5 @@ footer img{
     .navs-main{margin-top:0px;}
     .teach-box{width:100%;height:10%!important;}
     .teach-box.show{width:100%;height:80%!important;}
+    .lag-box{height:56px;}
 }

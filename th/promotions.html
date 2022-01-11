@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,10 @@
 </head>
 <body>
     <nav class="title-nav position-fixed navbar navbar-expand-lg navbar-dark align-items-center justify-content-end w-100 top-0">
+        <div class="lag-box position-absolute d-flex top-0 left-0 text-light">
+            <a class="dropdown-item w-50 d-flex flex-column align-items-center justify-content-center" href="promotions.html"><img class="w-75 mb-2 pc-only" src="../images/th.png" alt="">TH</a>
+            <a class="dropdown-item w-50 d-flex flex-column align-items-center justify-content-center" href="../en/promotions.html"><img class="w-75 mb-2 pc-only" src="../images/en.png" alt="">EN</a>
+        </div>
         <a class="logo nav-link position-absolute p-0 ph-only" href="index.html"><img class="logo-img w-100" src="../images/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,19 +33,13 @@
                     <a class="logo nav-link position-relative" href="index.html"><img class="logo-img position-absolute w-100" src="../images/logo.png" alt=""></a>
                 </li>
                 <li class="nav-item text-center">
+                    <a class="nav-link" href="leaderboard.html"><img class="w-100 pc-only" src="../images/iCON_Ranking-TH.png"><span class="ph-only justify-content-center">Leaderboard</span></a>
+                </li>
+                <li class="nav-item text-center">
                     <a class="nav-link" href="diamond.html"><img class="w-100 pc-only" src="../images/iCON_Gift-TH.png"><span class="ph-only justify-content-center">Diamond</span></a>
                 </li>
                 <li class="nav-item text-center">
                     <a class="nav-link" href="contact.html"><img class="w-100 pc-only" src="../images/iCON_US-TH.png"><span class="ph-only justify-content-center">Content Us</span></a>
-                </li>
-                <li class="nav-item dropdown text-center">
-                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Langue
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="promotions.html">Thai</a>
-                        <a class="dropdown-item" href="../en/promotions.html">English</a>
-                    </div>
                 </li>
             </ul>
         </div>
@@ -143,5 +141,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/vue@2.3.4/dist/vue.js"></script>
+    <script src="../js/oscheck.js"></script>
 </body>
 </html>

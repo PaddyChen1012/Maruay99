@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/custom_new.css">
+</head>
+<body>
+    <nav class="title-nav position-fixed navbar navbar-expand-lg navbar-dark align-items-center justify-content-end w-100 top-0">
+        <div class="lag-box position-absolute d-flex top-0 left-0 text-light">
+            <a class="dropdown-item w-50 d-flex flex-column align-items-center justify-content-center" href="../th/leaderboard.html"><img class="w-75 mb-2 pc-only" src="../images/th.png" alt="">TH</a>
+            <a class="dropdown-item w-50 d-flex flex-column align-items-center justify-content-center" href="leaderboard.html"><img class="w-75 mb-2 pc-only" src="../images/en.png" alt="">EN</a>
+        </div>
+        <a class="logo nav-link position-absolute p-0 ph-only" href="index.html"><img class="logo-img w-100" src="../images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mx-auto">
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="index.html"><img class="w-100 pc-only" src="../images/iCON_Home-ENG.png"><span class="ph-only justify-content-center">Home</span></a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="game.html"><img class="w-100 pc-only" src="../images/iCON_Game-ENG.png"><span class="ph-only justify-content-center">Games</span></a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="promotions.html"><img class="w-100 pc-only" src="../images/iCON_News-ENG.png"><span class="ph-only justify-content-center">Promotions</span></a>
+                </li>
+                <li class="nav-item text-center pc-only">
+                    <a class="logo nav-link position-relative" href="index.html"><img class="logo-img position-absolute w-100" src="../images/logo.png" alt=""></a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="leaderboard.html"><img class="w-100 pc-only" src="../images/iCON_Ranking-ENG.png"><span class="ph-only justify-content-center">Leaderboard</span></a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="diamond.html"><img class="w-100 pc-only" src="../images/iCON_Gift-ENG.png"><span class="ph-only justify-content-center">Diamond</span></a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="contact.html"><img class="w-100 pc-only" src="../images/iCON_US-ENG.png"><span class="ph-only justify-content-center">Content Us</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- fixed bar -->
+    <div class="position-fixed d-flex flex-column align-items-center justify-content-between p-1 bg-white-50 fixed-bar">
+        <a id="download_android" href="https://play.google.com/store/apps/details?id=com.starcube.Maruay99&shortlink=WebMR99Download&pid=Web-MR99-Download"><img class="img-fluid p-2" src="https://www.maruay99ph.com/wp-content/uploads/2020/03/android.png" alt=""></a>
+        <a id="download_ios" href="https://web.maruay99.com/common/receive/Counter/Maruay_Mobil_QRCodeLink.aspx?gid=MARUAY99"><img class="img-fluid p-2" src="https://www.maruay99ph.com/wp-content/uploads/2020/03/apk_ios.png" alt=""></a>
+    </div>
+
+
+    <main class="container-fluid p-0 diamond">
+        <div class="w-100 overflow-hidden d-flex align-items-center justify-content-center diamond-img">
+            <h2 class="text-light">Diamond</h2>
+        </div>
+
+
+        <section class="container-fluid p-0">
+            <div class="container py-5">
+                <div class="row w-100 m-0 justify-content-center">
+                    <div class="col-12 col-md-8 p-0">
+                        <ul class="nav nav-pills my-3 flex-column flex-md-row justify-content-around" id="pills-tab" role="tablist">
+                            <li class="nav-item p-2">
+                                <a class="nav-link diamond-btn active" id="pills-single-tab" data-toggle="pill" href="#pills-single" role="tab" aria-controls="pills-single" aria-selected="true">RANK_SINGLE</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="nav-link diamond-btn" id="pills-betwin-tab" data-toggle="pill" href="#pills-betwin" role="tab" aria-controls="pills-betwin" aria-selected="false">RANK_BETWIN</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="nav-link diamond-btn" id="pills-total-tab" data-toggle="pill" href="#pills-total" role="tab" aria-controls="pills-total" aria-selected="false">RANK_TOTAL</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="nav-link diamond-btn" id="pills-activity-tab" data-toggle="pill" href="#pills-activity" role="tab" aria-controls="pills-activity" aria-selected="false">RANK_ACTIVITY</a>
+                            </li>
+                        </ul>    
+                    </div>
+                    <div class="col-12 border p-0 bg-black-50 overflow-hidden">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-single" role="tabpanel" aria-labelledby="pills-single-tab">
+                                <iframe width="100%" height="400" src="https://web.maruay99.com/mobile/ingame/rank/index.aspx?rankid=WEB_RANK_SINGLE" frameborder="0"></iframe>
+                            </div>
+                            <div class="tab-pane fade" id="pills-betwin" role="tabpanel" aria-labelledby="pills-betwin-tab">
+                                <iframe width="100%" height="400" src="https://web.maruay99.com/mobile/ingame/rank/index.aspx?rankid=WEB_RANK_BETWIN" frameborder="0"></iframe>
+                            </div>
+                            <div class="tab-pane fade" id="pills-total" role="tabpanel" aria-labelledby="pills-total-tab">
+                                <iframe width="100%" height="400" src="https://web.maruay99.com/mobile/ingame/rank/index.aspx?rankid=WEB_RANK_TOTAL" frameborder="0"></iframe>
+                            </div>
+                            <div class="tab-pane fade" id="pills-activity" role="tabpanel" aria-labelledby="pills-activity-tab">
+                                <iframe width="100%" height="400" src="https://web.maruay99.com/mobile/ingame/rank/index.aspx?rankid=WEB_RANK_ACTIVITY" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="../js/oscheck.js"></script>
+</body>
+</html>
