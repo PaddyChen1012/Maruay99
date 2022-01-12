@@ -191,8 +191,11 @@ footer img{
     text-align:center;
     padding:4px 0;
 }
-.popular::before{
-    content:'POPLAR';
+.popular.en::before{
+    content:'POPULAR';
+}
+.popular.th::before{
+    content:'สุดฮิต';
 }
 .best::before{
     content:'BEST BUY';
