@@ -51,6 +51,7 @@ footer{
 footer img{
     -webkit-filter:drop-shadow(0px 0px 6px #FFD700);
 }
+.leaderboard-img,
 .promotions-img,
 .contact-img,
 .diamond-img{
@@ -59,14 +60,17 @@ footer img{
     background-repeat:no-repeat;
     background-size:cover;
 }
-.promotions-img{background-image:url(../images/banner.jpg);}
-.contact-img{background-image:url(../images/banner.jpg);}
-.diamond-img{background-image:url(../images/banner.jpg);}
+.leaderboard-img{background-image:url(../images/Rank-AW-WEB-BannerH-13012022.png);}
+.promotions-img{background-image:url(../images/News-AW-WEB-BannerH-13012022.png);}
+.contact-img{background-image:url(../images/ContactUS-AW-WEB-BannerH-13012022.png);}
+.diamond-img{background-image:url(../images/Gfit-AW-WEB-BannerH-13012022.png);}
 .game ul::before,
+.leaderboard-img::before,
 .promotions-img::before,
 .contact-img::before,
 .diamond-img::before,
 .game .tab-pane::before,
+.leaderboard section::after,
 .diamond section::after,
 .promotions section::after,
 .contact section::after{
@@ -77,6 +81,7 @@ footer img{
     width:100%;
 }
 .game ul::before,
+.leaderboard-img::before,
 .promotions-img::before,
 .contact-img::before,
 .diamond-img::before{
@@ -88,6 +93,7 @@ footer img{
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
 }
 .game .tab-pane::before,
+.leaderboard section::after,
 .diamond section::after,
 .promotions section::after,
 .contact section::after{
@@ -109,7 +115,8 @@ footer img{
 
 
 /* new_game */
-.game ul{height:270px;background:url(../images/casino-software.jpg) no-repeat bottom/cover;}
+.game ul{height:270px;background:url(../images/Game-AW-WEB-BannerH-13012022.png) no-repeat bottom/cover;}
+.leaderboard-btn,
 .diamond-btn,
 .game-btn{
     background:rgb(136,4,4);
@@ -120,7 +127,8 @@ footer img{
     border:2px solid #FFD700;
     color:rgba(255,255,255,1);
 }
-.diamond-btn:hover,.game-btn:hover{color:rgba(255,255,255,1);box-shadow:0 0 10px #FFD700;}
+.leaderboard-btn:hover.diamond-btn:hover,.game-btn:hover{color:rgba(255,255,255,1);box-shadow:0 0 10px #FFD700;}
+.leaderboard-btn.active,
 .diamond-btn.active,
 .game-btn.active{
     background:rgb(136,4,4);
@@ -170,6 +178,9 @@ footer img{
 .fb:hover{color:#1976d2;opacity:.75;}
 .ln:hover{color:#3fbc01;opacity:.75;}
 .cbtn img{width: 30px;height: 30px;}
+
+/* Leaderboard */
+.leaderboard .container{z-index:2;}
 
 /* Diamond */
 .diamond .container{z-index:2;}
