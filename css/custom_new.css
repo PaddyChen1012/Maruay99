@@ -41,7 +41,7 @@ h1,h2,h3{white-space:nowrap;}
 .line::before{margin-right:1rem;}
 .line::after{margin-left:1rem;}
 .fixed-bar{bottom:0;right:0;width:150px;z-index:3;}
-main{margin-top: 56px;}
+main{margin-top: 96px;}
 footer{
     background:rgb(0,0,0);
     background:-moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(68,68,68,1) 100%);
@@ -223,6 +223,9 @@ footer img{
     content:'BEST BUY';
 }
 
+@media screen and (max-width:992px) {
+    main{margin-top:56px;}
+}
 
 @media screen and (max-width:767px) {
     .ph-only{display:flex;}
