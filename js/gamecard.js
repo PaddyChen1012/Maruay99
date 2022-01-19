@@ -99,7 +99,7 @@ function loadData(obj) {
             for(let l = 0; l < msgLen; l++){
                 if (GL[Num].main[l].includes('png') || GL[Num].main[l].includes('jpg')){
                     let gameImg = document.createElement('img');
-                    gameImg.setAttribute('class', 'card-img-top mb-2');
+                    gameImg.setAttribute('class', 'card-img-top mb-2 w-auto img-fluid');
                     gameImg.setAttribute('src', '../images/' + GL[Num].main[l]);
                     page.appendChild(gameImg)
                 }else{

@@ -232,6 +232,7 @@ footer img{
     .ph-only{display:flex;}
     .pc-only{display:none;}
     h3{font-size:1.25rem;}
+    .ph-w-100{width:100%!important;}
     .navbar-nav .nav-link{width:auto;}
     .logo{top:0;left:calc(50% - 40px);width:80px;}
     .logo-img{top:0;}
