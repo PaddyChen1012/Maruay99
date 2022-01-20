@@ -4,11 +4,11 @@ body{background:rgba(50,4,4,1);}
 .ph-only{display:none;}
 .pc-only{display:flex;}
 .title-nav{
-    background:rgb(222,216,4);
-    background:-moz-linear-gradient(0deg,rgba(255,215,0,1) 0%, rgba(136,4,4,1) 20%, rgba(110,4,4,1) 50%, rgba(136,4,4,1) 70%, rgba(233,4,4,1) 100%);
-    background:-webkit-linear-gradient(0deg,rgba(255,215,0,1) 0%, rgba(136,4,4,1) 20%, rgba(110,4,4,1) 50%, rgba(136,4,4,1) 70%, rgba(233,4,4,1) 100%);
-    background:linear-gradient(0deg,rgba(255,215,0,1) 0%, rgba(136,4,4,1) 20%, rgba(110,4,4,1) 50%, rgba(136,4,4,1) 70%, rgba(233,4,4,1) 100%);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ded804",endColorstr="#e90404",GradientType=1);
+    background: rgb(255,215,0);
+    background: -moz-linear-gradient(0deg, rgba(255,215,0,1) 0%, rgba(55,55,55,1) 10%, rgba(0,0,0,1) 50%, rgba(55,55,55,1) 75%, rgba(163,163,163,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255,215,0,1) 0%, rgba(55,55,55,1) 10%, rgba(0,0,0,1) 50%, rgba(55,55,55,1) 75%, rgba(163,163,163,1) 100%);
+    background: linear-gradient(0deg, rgba(255,215,0,1) 0%, rgba(55,55,55,1) 10%, rgba(0,0,0,1) 50%, rgba(55,55,55,1) 75%, rgba(163,163,163,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd700",endColorstr="#a3a3a3",GradientType=1);
     z-index:20;
 }
 .lag-box{height:100%;z-index:2;}
@@ -17,11 +17,14 @@ body{background:rgba(50,4,4,1);}
 .left-0{left:0;}
 .navbar-nav .nav-link{width:80px;}
 .navbar-nav .logo{width:160px;}
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color:rgba(255,255,255,.5);
+}
 .dropdown-menu {
     background-color:#000;
     border:1px solid rgba(228,167,0,1);
 }
-.dropdown-item {color:#fff;}
+.dropdown-item {color:#fff;max-width:60px;}
 .scroll .logo{width:100px;}
 .logo-img{top:-22px;left:0;}
 h1,h2,h3{white-space:nowrap;}
@@ -231,6 +234,7 @@ footer img{
 @media screen and (max-width:767px) {
     .ph-only{display:flex;}
     .pc-only{display:none;}
+    h1{white-space:inherit;}
     h3{font-size:1.25rem;}
     .ph-w-100{width:100%!important;}
     .navbar-nav .nav-link{width:auto;}

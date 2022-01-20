@@ -1,5 +1,5 @@
 // const GameMsg = document.querySelector('#productDescription');
-let requestURL = 'json/en_game_list.json';
+let requestURL = '../json/game_list.json';
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
