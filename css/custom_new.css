@@ -111,6 +111,26 @@ footer img{
 }
 .promotions-card{z-index:2;}
 .promotions-img h2,.contact-img h2,.diamond-img h2{z-index:1;}
+.leaderboard-btn,
+.diamond-btn,
+.game-btn{
+    background:rgb(136,4,4);
+    background:-moz-linear-gradient(0deg,rgba(136,4,4,.5) 0%, rgba(110,4,4,.5) 50%, rgba(136,4,4,.5) 70%, rgba(233,4,4,.5) 100%);
+    background:-webkit-linear-gradient(0deg,rgba(136,4,4,.5) 0%, rgba(110,4,4,.5) 50%, rgba(136,4,4,.5) 70%, rgba(233,4,4,.5) 100%);
+    background:linear-gradient(0deg,rgba(136,4,4,.5) 0%, rgba(110,4,4,.5) 50%, rgba(136,4,4,.5) 70%, rgba(233,4,4,.5) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ded804",endColorstr="#e90404",GradientType=1);
+    border:2px solid #FFD700;
+    color:rgba(255,255,255,1);
+}
+.leaderboard-btn.active,
+.diamond-btn.active,
+.game-btn.active{
+    background:rgb(136,4,4);
+    background:-moz-linear-gradient(0deg,rgba(136,4,4,1) 0%, rgba(110,4,4,1) 50%, rgba(136,4,4,1) 70%, rgba(233,4,4,1) 100%);
+    background:-webkit-linear-gradient(0deg,rgba(136,4,4,1) 0%, rgba(110,4,4,1) 50%, rgba(136,4,4,1) 70%, rgba(233,4,4,1) 100%);
+    background:linear-gradient(0deg,rgba(136,4,4,1) 0%, rgba(110,4,4,1) 50%, rgba(136,4,4,1) 70%, rgba(233,4,4,1) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ded804",endColorstr="#e90404",GradientType=1);
+}
 
 
 /* new_index */
