@@ -55,6 +55,7 @@ footer{
 }
 footer img{
     -webkit-filter:drop-shadow(0px 0px 6px #FFD700);
+    max-width: 200px;
 }
 .leaderboard-img,
 .promotions-img,
@@ -139,7 +140,13 @@ footer img{
 .home-img{height:70vw;max-height:350px;}
 .question .card{background:rgba(0,0,0,.75);border-color:#FFD700;}
 .question .card-header{background:rgba(136,4,4,.2);border-color:rgba(255,215,0,.5);}
+.share-box{height:60px;}
+.share-box img{-webkit-filter:unset;}
 
+/* share box fixed */
+/* .test{position: fixed;bottom: 16px;right: 0;display: flex;flex-direction: column;background: rgba(255,255,255,.25);width: 60px;height: auto;padding: .5rem;border-radius: 5px 0 0 5px;}
+.test a{margin:0 0 8px !important;width: 100%;}
+.test img{width: 100%;} */
 
 /* new_game */
 .game ul{height:270px;background:url(../images/Game-AW-WEB-BannerH-13012022.png) no-repeat bottom/cover;}
