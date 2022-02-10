@@ -8,11 +8,9 @@ console.log(diOS)
 function oscheck(){
     if (isAndroid == true && isiOS == false){
         diOS[0].style.display = 'none';
-        diOS[1].style.display = 'none';
         diOS[2].style.display = 'none';
     }else if (isAndroid == false && isiOS == true){
         dAndroid[0].style.display = 'none';
-        dAndroid[1].style.display = 'none';
         dAndroid[2].style.display = 'none';
     }else {
         return
