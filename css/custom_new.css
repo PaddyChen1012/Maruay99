@@ -145,6 +145,9 @@ footer img{
 .question .card-header{background:rgba(136,4,4,.2);border-color:rgba(255,215,0,.5);}
 .share-box{height:60px;}
 .share-box img{-webkit-filter:unset;}
+.home .card{border:2px solid #FFD700;}
+.home .modal-content{background:rgba(136,4,4,1);border:2px solid #FFD700;}
+.home .modal-content{max-height:calc(100vh - 3.5rem);}
 
 /* share box fixed */
 /* .test{position:fixed;bottom:16px;right:0;display:flex;flex-direction:column;background:rgba(255,255,255,.25);width:60px;height:auto;padding:.5rem;border-radius:5px 0 0 5px;}
