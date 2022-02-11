@@ -47,6 +47,7 @@ h1,h2,h3{white-space:nowrap;}
 .fixed-dl-bar{top:21.5px;left:0;width:301px;z-index:100;}
 .fixed-dl-bar a{-webkit-filter:drop-shadow(0px 0px 5px #FFD700)}
 .fixed-dl-solid{bottom:0;right:0;z-index:20;}
+.btnBox{width: 160px;}
 main{margin-top:96px;}
 footer{
     background:rgb(0,0,0);
@@ -266,6 +267,7 @@ footer img{
     .ph-w-100{width:100%!important;}
     .navbar-nav .nav-link{width:auto;}
     .fixed-dl-bar {top:4px;left:0;width:146px;}
+    .btnBox{width: 120px;}
     .logo{top:0;left:calc(50% - 40px);width:80px;}
     .logo-img{top:0;}
     .game-kind{height:calc(100vh - 47vw - 56px);padding-bottom:0;}
