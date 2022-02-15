@@ -14,18 +14,26 @@ request.onload = function() {
 // Create the game card form JSON
 function cardData(obj) {
     let GameList = obj;
-    SL = document.querySelector('#slots_list');
-    GL = GameList.slots;
-    GK = 'slots'
-    cardload(GK)
-    SL = document.querySelector('#fishing_list');
-    GL = GameList.fishing;
-    GK = 'fishing'
-    cardload(GK)
-    SL = document.querySelector('#others_list');
-    GL = GameList.others;
-    GK = 'others'
-    cardload(GK)
+    // SL = document.querySelector('#slots_list');
+    // GL = GameList.slots;
+    // GK = 'slots'
+    // cardload(GK)
+    // SL = document.querySelector('#fishing_list');
+    // GL = GameList.fishing;
+    // GK = 'fishing'
+    // cardload(GK)
+    // SL = document.querySelector('#others_list');
+    // GL = GameList.others;
+    // GK = 'others'
+    // cardload(GK)
+    let gameKid = ['slots','fishing','others']
+    for (let i = 0; i < 3; i++){
+        idname = '#' + gameKid[i] + '_list'
+        SL = document.querySelector(idname);
+        GL = GameList[gameKid[i]];
+        GK = gameKid[i];
+        cardload()
+    }
 
 
     function cardload(){
@@ -76,7 +84,6 @@ function loadData(obj) {
     let page = document.querySelector('#pageImg');
 
     function getNum(e) {
-        console.log(e)
         let modalBody = document.querySelector('.modal-body');
         let Num = e.target.dataset.no;
         let BtnKids = e.target.dataset.kids;

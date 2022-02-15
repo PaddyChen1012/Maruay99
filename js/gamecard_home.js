@@ -6,13 +6,13 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-    const GameList = request.response;
-    cardData(GameList);
-    loadData(GameList);
+    const GameLists = request.response;
+    hcardData(GameLists);
+    hloadData(GameLists);
 }
 
 // Create the game card form JSON
-function cardData(obj) {
+function hcardData(obj) {
     let GameList = obj;
     SL = document.querySelector('#games_list');
     GL = GameList.slots;
@@ -57,14 +57,14 @@ function cardData(obj) {
             cardBtn.textContent = 'คำอธิบาย';
             cardFt.appendChild(cardBtn);
 
-            // cardBtn.addEventListener('click', loadData, false);
+            // cardBtn.addEventListener('click', hloadData, false);
         }
     }
     
 }
 
 // The game card introduce
-function loadData(obj) {
+function hloadData(obj) {
     let GameList = obj;
     let GameName = document.querySelector('#GameName');
     let page = document.querySelector('#pageImg');
