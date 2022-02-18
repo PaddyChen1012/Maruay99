@@ -46,10 +46,19 @@ function cardData(obj) {
             cardBg.setAttribute('class', 'card bg-black-50 text-light');
             gameCard.appendChild(cardBg);
 
+            imgLink = document.createElement('a')
+            imgLink.setAttribute('class', 'w-100');
+            imgLink.setAttribute('href', '#');
+            imgLink.setAttribute('name', 'btn');
+            imgLink.setAttribute('data-no', z);
+            imgLink.setAttribute('data-kids', GK);
+            imgLink.setAttribute('data-target', '#productDescription');
+            imgLink.setAttribute('data-toggle', 'modal');
             cardImg = document.createElement('img');
-            cardImg.setAttribute('class', 'card-img-top');
+            cardImg.setAttribute('class', 'card-img-top pointer-events-n');
             cardImg.setAttribute('src', '../images/' + GL[z].gameimg);
-            cardBg.appendChild(cardImg);
+            imgLink.appendChild(cardImg);
+            cardBg.appendChild(imgLink)
 
             cardFt = document.createElement('div');
             cardFt.setAttribute('class', 'card-body d-flex flex-column justify-content-between');
@@ -71,7 +80,6 @@ function cardData(obj) {
             cardBtn.textContent = 'คำอธิบาย';
             cardFt.appendChild(cardBtn);
 
-            cardBtn.addEventListener('click', loadData, false);
         }
     }
     
