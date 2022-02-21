@@ -5,7 +5,7 @@ let dlbtn = document.querySelector('#download_btn')
 
 function oscheck(){
     if (isAndroid == false && isiOS == true){
-        dlbtn.href = 'https://cdn.maruay99.com/';
+        dlbtn.href = 'https://cdn.maruay99.com/apk/maruay99.apk';
     }else {
         dlbtn.href = 'https://play.google.com/store/apps/details?id=com.starcube.Maruay99&shortlink=WebMR99Download&pid=Web-MR99-Download';
     }
